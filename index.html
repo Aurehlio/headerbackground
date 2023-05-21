@@ -12,7 +12,20 @@
     .content {
       max-width: 800px;
       margin: 0 auto;
-      padding: 0px;
+      padding: 20px;
+    }
+
+    /* Adiciona estilos responsivos para o cabeçalho */
+    @media (max-width: 768px) {
+      .header {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .header {
+        height: 200px;
+      }
     }
   </style>
 </head>
@@ -22,7 +35,7 @@
   </div>
   
   <div class="content">
-    <h1>My Networks</h1>
+    <h2>Sobre Nós</h2>
     <p>Bem-vindo ao nosso site! Somos uma empresa dedicada a oferecer soluções inovadoras para nossos clientes.</p>
     
     <h2>Produtos</h2>
@@ -37,4 +50,3 @@
   </div>
 </body>
 </html>
-
