@@ -3,22 +3,22 @@
 <head>
   <style>
     .header {
-      position: relative; /* Define a posição relativa para que os elementos internos se posicionem corretamente */
+      position: relative;
       background-image: url('https://vjncxx2nh46wofwtgep5nshzrtuvv6nfnj3mwapk7bmtp7vpoqwq.arweave.net/qlor300_PWcW0zEf1sj5jOla-aVqdssB6vhZN_6vdC0');
       background-size: cover;
-      background-position: center; /* Mantém a imagem centralizada */
+      background-position: center;
       height: 450px;
     }
     
     .overlay {
-      position: absolute; /* Define a posição absoluta para que o elemento fique sobreposto */
-      top: 18%; /* Posiciona no centro vertical */
-      left: 50%; /* Posiciona no centro horizontal */
-      transform: translate(-50%, -50%); /* Centraliza o elemento */
+      position: absolute;
+      top: 18%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .content {
-      max-width: 800px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 20px;
     }
@@ -35,11 +35,36 @@
         height: 200px;
       }
     }
+
+    /* Estilos para a frase "Sobre Nós" */
+    .content h2 {
+      font-size: 38px;
+      color: rgb(0, 0, 255);
+      margin-bottom: 5px;
+    }
+
+    /* Estilos para a frase "Bem-vindo ao nosso site!..." */
+    .content p {
+      font-size: 25px;
+      color: rgb(0, 0, 0);
+      margin-top: 5px;
+      text-indent: 20px; /* Adiciona um recuo de início de parágrafo */
+    }
+
+    /* Estilos para as palavras "Produtos" e "Contato" */
+    .content h2:nth-of-type(2),
+    .content h2:nth-of-type(3) {
+      font-size: 30px;
+      color: rgb(135, 206, 250); /* Azul claro em RGB */
+    }
+
+    body {
+      background-color: #006072; /* Azul escuro */
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <!-- Conteúdo do cabeçalho aqui -->
     <div class="overlay">
       <img src="https://j4kqdhcbk7266dkmrpqeys2nbsusrubpzcv4eaoukoyl6dx5f45q.arweave.net/TxUBnEFX9e8NTIvgTEtNDKko0C_Iq8IB1FOwvw79Lzs" alt="Imagem de Sobreposição">
     </div>
@@ -49,15 +74,16 @@
     <h2>Sobre Nós</h2>
     <p>Bem-vindo ao nosso site! Somos uma empresa dedicada a oferecer soluções inovadoras para nossos clientes.</p>
     
-    <h2>Produtos</h2>
+    <h2 style="font-size: 30px; color: rgb(135, 206, 250);">Produtos</h2>
     <ul>
       <li>Produto 1</li>
       <li>Produto 2</li>
       <li>Produto 3</li>
     </ul>
     
-    <h2>Contato</h2>
+    <h2 style="font-size: 30px; color: rgb(135, 206, 250);">Contato</h2>
     <p>Para entrar em contato conosco, envie um e-mail para info@exemplo.com ou ligue para o número (XX) XXXX-XXXX.</p>
   </div>
 </body>
 </html>
+
