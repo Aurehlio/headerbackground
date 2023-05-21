@@ -5,7 +5,7 @@
     .header {
       background-image: url('https://hdmlxs6b2z4torbbcuzfa2gltvvfub667acx3eipelqe7rnditbq.arweave.net/ONi7y8HWeTdEIRUyUGjLnWpaB974BX2RDyLgT8WjRMM');
       background-size: cover;
-      background-position: center;
+      background-position: left center; /* Inicia a imagem na posição esquerda */
       height: 450px;
     }
     
@@ -19,14 +19,14 @@
     @media (max-width: 768px) {
       .header {
         height: 300px;
-        background-position: left center; /* Move a imagem para a direita quando a tela for menor que 768px */
+        background-position-x: 70%; /* Move a imagem para a direita quando a tela for menor que 768px */
       }
     }
 
     @media (max-width: 576px) {
       .header {
         height: 200px;
-        background-position: left center; /* Move a imagem para a direita quando a tela for menor que 576px */
+        background-position-x: 80%; /* Move a imagem para a direita quando a tela for menor que 576px */
       }
     }
   </style>
