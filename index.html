@@ -7,7 +7,6 @@
       background-size: cover;
       background-position: center;
       height: 450px;
-      margin-left: 0; /* Definindo a margem inicial para 0 */
     }
     
     .content {
@@ -20,14 +19,14 @@
     @media (max-width: 768px) {
       .header {
         height: 300px;
-        margin-left: 40px; /* Define uma margem para a direita quando a tela for menor que 768px */
+        background-position: right center; /* Move a imagem para a direita quando a tela for menor que 768px */
       }
     }
 
     @media (max-width: 576px) {
       .header {
         height: 200px;
-        margin-left: 80px; /* Define uma margem maior para a direita quando a tela for menor que 576px */
+        background-position: right center; /* Move a imagem para a direita quando a tela for menor que 576px */
       }
     }
   </style>
