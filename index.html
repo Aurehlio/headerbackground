@@ -56,7 +56,8 @@
 		/* Estilos para as palavras "Produtos" e "Contato" */
 		.content h2:nth-of-type(1),
 		.content h2:nth-of-type(2),
-    .content h2:nth-of-type(3){
+    .content h2:nth-of-type(3),
+    .content h2:nth-of-type(4){
       margin-top: 40px;
       margin-bottom: 8px;
 			font-size: 30px;
@@ -79,7 +80,7 @@
 
 		.content th,
 		.content td {
-			height: 60px;
+			height: 100px;
 			border: 1px solid #000;
 			padding: 10px;
 			text-align: center;
@@ -95,19 +96,19 @@
 		/* Estilos para o grid com duas colunas */
 		.grid {
 			display: grid;
-			grid-template-columns: 150px 1fr;
+			grid-template-columns: 80px 1fr;
 			grid-template-rows: 1fr;
-			grid-gap: 10px;
+			grid-gap: 5px;
 			margin: 0 auto;
 			max-width: 100%;
 			border: 1px solid #000;
-      border: none;
+      /* border: none;*/
 		}
 
 		.cell {
 			background-color: transparent;
 			border: none;
-			height: 60px;
+			height: 80px;
 			width: 1fr;
 			display: flex;
 			align-items: center;
@@ -126,6 +127,7 @@
 		.cell p {
 			font-size: 25px;
 			color: #333333;
+      text-align: justify;
 		}
 	</style>
 </head>
@@ -142,7 +144,7 @@
 
 		<hr> <!-- Divisor horizontal -->
 
-    <h2>My contacts</h2>
+    <h2>My Contacts</h2>
     
     <div class="grid">
 			<div class="cell">
@@ -166,6 +168,19 @@
 			</div>
 		</div>
     
+    
+    <h2>My Projects</h2>
+    
+    <div class="grid">
+			<div class="cell">
+				<a href="https://cookie-surfboard-370.notion.site/Aur-lio-Almeida-c0db70b836c74c589af8e16e2df2a961" target="_blank">
+					<img src="https://3qo2jsglut2z7i7pwnqc6wg7xtwtalplqmdxfeeiwhnj5k45e7ea.arweave.net/3B2kyMuk9Z-j77NgL1jfvO0wLeuDB3KQiLHanqudJ8g" alt="Imagem 1" width="50" height="50">
+				</a>
+			</div>
+			<div class="cell">
+				<p>Please access my pages created on Notion where I share my completed, ongoing, and planned projects.</p>
+			</div>
+		</div>
 		
     <h2>My Professional Profile</h2>
 
