@@ -1,153 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    .header {
-      position: relative;
-      background-image: url('https://vjncxx2nh46wofwtgep5nshzrtuvv6nfnj3mwapk7bmtp7vpoqwq.arweave.net/qlor300_PWcW0zEf1sj5jOla-aVqdssB6vhZN_6vdC0');
-      background-size: cover;
-      background-position: center;
-      height: 450px;
-    }
-    
-    .overlay {
-      position: absolute;
-      top: 18%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+	<title>My Socials</title>
+	<style>
+		.header {
+			position: relative;
+			background-image: url('https://vjncxx2nh46wofwtgep5nshzrtuvv6nfnj3mwapk7bmtp7vpoqwq.arweave.net/qlor300_PWcW0zEf1sj5jOla-aVqdssB6vhZN_6vdC0');
+			background-size: cover;
+			background-position: center;
+			height: 450px;
+		}
 
-    .content {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-    }
+		.overlay {
+			position: absolute;
+			top: 18%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 
-    /* Adiciona estilos responsivos para o cabeçalho */
-    @media (max-width: 768px) {
-      .header {
-        height: 300px;
-      }
-    }
+		.content {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 20px;
+		}
 
-    @media (max-width: 576px) {
-      .header {
-        height: 200px;
-      }
-    }
+		/* Adiciona estilos responsivos para o cabeçalho */
+		@media (max-width: 768px) {
+			.header {
+				height: 300px;
+			}
+		}
 
-    /* Estilos para a frase "My Network" */
-    .content h2 {
-      font-size: 38px;
-      color: rgb(0, 0, 255);
-      margin-bottom: 5px;
-    }
+		@media (max-width: 576px) {
+			.header {
+				height: 200px;
+			}
+		}
 
-    /* Estilos para a frase "Bem-vindo ao nosso site!..." */
-    .content p {
-      font-size: 25px;
-      color: rgb(0, 0, 0);
-      margin-top: 5px;
-      text-indent: 20px; /* Adiciona um recuo de início de parágrafo */
-    }
+		/* Estilos para a frase "My Network" */
+		.content h1 {
+			font-size: 38px;
+			color: rgb(0, 0, 255);
+			margin-bottom: 10px;
+		}
 
-    /* Estilos para as palavras "Produtos" e "Contato" */
-    .content h2:nth-of-type(2),
-    .content h2:nth-of-type(3) {
-      font-size: 30px;
-      color: rgb(135, 206, 250); /* Azul claro em RGB */
-    }
+		/* Estilos para a frase "Bem-vindo ao nosso site!..." */
+		.content p {
+			font-size: 25px;
+			color: rgb(0, 0, 0);
+			margin-top: 5px;
+     	text-indent: 20px; /* Adiciona um recuo de início de parágrafo */
+			text-align: justify; /* Alinha o texto justificado */
+		}
 
-    body {
-      background-image: url('https://vzd6h5n5p3wjz5nat7w4bchorfmqr54eezu3mnn7taxhawgt7via.arweave.net/rkfj9b1-7Jz1oJ_twIjuiVkI94QmabY1v5gucFjT_VA');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-color: #006072; /* Azul escuro */
-    }
+		/* Estilos para as palavras "Produtos" e "Contato" */
+		.content h2:nth-of-type(1),
+		.content h2:nth-of-type(2),
+    .content h2:nth-of-type(3){
+      margin-top: 40px;
+      margin-bottom: 8px;
+			font-size: 30px;
+			color: rgb(0, 96, 114); /* #006072 - Azul escuro */
+		}
 
-    /* Estilos para a tabela */
-    .content table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
+		body {
+			background-image: url('https://vzd6h5n5p3wjz5nat7w4bchorfmqr54eezu3mnn7taxhawgt7via.arweave.net/rkfj9b1-7Jz1oJ_twIjuiVkI94QmabY1v5gucFjT_VA');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: #006072; /* Azul escuro */
+		}
 
-    .content th,
-    .content td {
-      height: 60px;
-      border: 1px solid #000;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
+		/* Estilos para a tabela */
+		.content table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		.content th,
+		.content td {
+			height: 60px;
+			border: 1px solid #000;
+			padding: 10px;
+			text-align: center;
+		}
+
+		/* Estilos para o divisor horizontal */
+		.content hr {
+			border: none;
+			border-top: 1px solid #14549C; /* #14549C - Azul divisor */
+			margin: 20px 0;
+		}
+
+		/* Estilos para o grid com duas colunas */
+		.grid {
+			display: grid;
+			grid-template-columns: 150px 1fr;
+			grid-template-rows: 1fr;
+			grid-gap: 10px;
+			margin: 0 auto;
+			max-width: 100%;
+			border: 1px solid #000;
+      border: none;
+		}
+
+		.cell {
+			background-color: transparent;
+			border: none;
+			height: 60px;
+			width: 1fr;
+			display: flex;
+			align-items: center;
+			padding-right: 10px;
+		}
+
+		.cell:first-child {
+			justify-content: flex-end;
+		}
+
+		.cell img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.cell p {
+			font-size: 25px;
+			color: #333333;
+		}
+	</style>
 </head>
 <body>
-  <div class="header">
-    <div class="overlay">
-      <img src="https://j4kqdhcbk7266dkmrpqeys2nbsusrubpzcv4eaoukoyl6dx5f45q.arweave.net/TxUBnEFX9e8NTIvgTEtNDKko0C_Iq8IB1FOwvw79Lzs" alt="Imagem de Sobreposição">
-    </div>
-  </div>
-  
-  <div class="content">
-    <h2>My Networks</h2>
-    <p>Welcome! This website aims to provide convenient and organized access to the links of my social media profiles in various specific segments such as work, hobbies, interests, and other relevant areas. With this approach, I intend to offer a streamlined experience for those who wish to connect and follow my online presence in different contexts.</p>
-    
-    <h2>Produtos</h2>
-    <ul>
-      <li>Produto 1</li>
-      <li>Produto 2</li>
-      <li>Produto 3</li>
-    </ul>
-    
-    <h2>Contato</h2>
-    <p>Para entrar em contato conosco, envie um e-mail para info@exemplo.com ou ligue para o número (XX) XXXX-XXXX.</p>
+	<div class="header">
+		<div class="overlay">
+			<img src="https://j4kqdhcbk7266dkmrpqeys2nbsusrubpzcv4eaoukoyl6dx5f45q.arweave.net/TxUBnEFX9e8NTIvgTEtNDKko0C_Iq8IB1FOwvw79Lzs" alt="Imagem de Sobreposição">
+		</div>
+	</div>
 
-    <table>
-      <tr>
-        <th>Coluna 1</th>
-        <th>Coluna 2</th>
-      </tr>
-      <tr>
-        <td>Linha 1</td>
-        <td>Linha 1</td>
-      </tr>
-      <tr>
-        <td>Linha 2</td>
-        <td>Linha 2</td>
-      </tr>
-      <tr>
-        <td>Linha 3</td>
-        <td>Linha 3</td>
-      </tr>
-      <tr>
-        <td>Linha 4</td>
-        <td>Linha 4</td>
-      </tr>
-      <tr>
-        <td>Linha 5</td>
-        <td>Linha 5</td>
-      </tr>
-      <tr>
-        <td>Linha 6</td>
-        <td>Linha 6</td>
-      </tr>
-      <tr>
-        <td>Linha 7</td>
-        <td>Linha 7</td>
-      </tr>
-      <tr>
-        <td>Linha 8</td>
-        <td>Linha 8</td>
-      </tr>
-      <tr>
-        <td>Linha 9</td>
-        <td>Linha 9</td>
-      </tr>
-      <tr>
-        <td>Linha 10</td>
-        <td>Linha 10</td>
-      </tr>
-    </table>
-  </div>
+	<div class="content">
+		<h1>My Networks</h1>
+		<p>Welcome! This website aims to provide convenient and organized access to the links of my social media profiles in various specific segments such as work, hobbies, interests, and other relevant areas. With this approach, I intend to offer a streamlined experience for those who wish to connect and follow my online presence in different contexts.</p>
+
+		<hr> <!-- Divisor horizontal -->
+
+    <h2>My contacts</h2>
+    
+    <div class="grid">
+			<div class="cell">
+				<a href="mailto:contato@aurelio.eng.br" target="_blank">
+					<img src="https://m543w2xfhvtx3hmdbkb2iuss6khgaiubq75zb22x4qtusee2b5xq.arweave.net/Z3m7auU9Z32dgwqDpFJS8o5gIoGH-5DrV-QnSRCaD28" alt="Imagem 1" width="50" height="50">
+				</a>
+			</div>
+			<div class="cell">
+				<p>Click on the image of the envelope to open your email client. It's a quick and efficient way to communicate with me, and I'll try to respond as soon as possible.</p>
+			</div>
+		</div>
+    
+    <div class="grid">
+			<div class="cell">
+				<a href="https://www.example.com" target="_blank">
+					<img src="https://pwza2q2scczn52mrmra2k7ub6d7lpneqzvdjft37tnos52pihqcq.arweave.net/fbINQ1IQst7pkWRBpX6B8P63tJDNRpLPf5tdLunoPAU" alt="Imagem 1" width="50" height="50">
+				</a>
+			</div>
+			<div class="cell">
+				<p>Texto da segunda coluna</p>
+			</div>
+		</div>
+    
+		
+    <h2>My Professional Profile</h2>
+
+				<div class="grid">
+			<div class="cell">
+				<a href="https://www.example2.com" target="_blank">
+					<img src="https://q3qwvjnlsqlvk2gn5wknrikeqnsd45exdlm6ixaxruxjf4vfzoyq.arweave.net/huFqpauUF1Voze2U2KFEg2Q-dJca2eRcF40ukvKly7E" alt="Imagem 2" width="50" height="50">
+				</a>
+			</div>
+			<div class="cell">
+				<p>Texto da segunda coluna (Grid 2)</p>
+			</div>
+		</div>
+    
+    
+    <h2>My inspirations and discoveries</h2>
+    
+    <div class="grid">
+			<div class="cell">
+				<a href="https://www.example.com" target="_blank">
+					<img src="https://pwza2q2scczn52mrmra2k7ub6d7lpneqzvdjft37tnos52pihqcq.arweave.net/fbINQ1IQst7pkWRBpX6B8P63tJDNRpLPf5tdLunoPAU" alt="Imagem 1" width="50" height="50">
+				</a>
+			</div>
+			<div class="cell">
+				<p>Texto da segunda coluna</p>
+			</div>
+		</div>
+    
+	</div>
 </body>
 </html>
